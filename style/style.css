@@ -104,6 +104,29 @@ body{
     margin: auto;
     max-width: 60rem;
 }
+.main-about-body-container{
+    width: 100%;
+    opacity: 1;
+    transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    margin: auto;
+    display: flex;
+    max-width: 60rem;
+}
+
+.about-container, .about-h1-container{
+    width: 50%;
+    
+}
+.about-container{
+    letter-spacing: 0.44px;
+    line-height: 1.55;
+    padding: 0px 10px;
+    border-left: 0.5px solid #17252A;
+}
+.about-h1-container{
+    align-items: center;
+    display: flex;
+}
 
 .typography-h3{
     color: #17252A;
