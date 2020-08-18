@@ -6,6 +6,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Home || Portfolio</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="./func.js"></script>
+    <!-- <link rel="shortcut icon" type="image/jpg" href=”Favicon_Image_Location”/> -->
 </head>
 <body>
     <div class="body-container">
@@ -18,12 +20,12 @@
                     <div class="site-links">
                         <div class="site-links-container">
                             <ul>
-                                <li class="site-link active">
+                                <li class="site-link">
                                     <a href="./index.html" class="link" >
                                         <span>Home</span>
                                     </a>
                                 </li>
-                                <li class="site-link">
+                                <li class="site-link ">
                                     <a href="./contact.html" class="link" >
                                         <span>Contact</span>
                                     </a>
@@ -38,7 +40,7 @@
                                         <span>About</span>
                                     </a>
                                 </li>
-                                <li class="site-link">
+                                <li class="site-link ">
                                     <a href="./services.html" class="link" >
                                         <span>Services</span>
                                     </a>
@@ -46,6 +48,18 @@
                             </ul>
                         </div>
                     </div>
+                    <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a href="./contact.html">Contact</a>
+                        <a href="./projects.html">Projects</a>
+                        <a href="./about.html">About</a>
+                        <a href="./services.html">Services</a>
+                      </div>
+                      <div id="main">
+                        <button onclick="openNav()">
+                            <img src="burger.svg" width="28px" height="20px" />
+                        </button>
+                      </div>
                 </header>
                 <main class="main-body-container">
                     <p class="typography-h3">Hello! I'm</p>

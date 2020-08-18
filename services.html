@@ -6,6 +6,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Services || Portfolio</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="./func.js"></script>
+    <!-- <link rel="shortcut icon" type="image/jpg" href=”Favicon_Image_Location”/> -->
 </head>
 <body>
     <div class="body-container">
@@ -46,8 +48,21 @@
                             </ul>
                         </div>
                     </div>
+                    <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a href="./contact.html">Contact</a>
+                        <a href="./projects.html">Projects</a>
+                        <a href="./about.html">About</a>
+                        <a href="./services.html">Services</a>
+                      </div>
+                      <div id="main">
+                        <button onclick="openNav()">
+                            <img src="burger.svg" width="28px" height="20px" />
+                        </button>
+                      </div>
                 </header>
                 <main class="main-body-container">
+                    
                     <p class="typography-h3">Sorry! This site is</p>
                     <h1 class="typogrpahy-h1">Under Maintenance.</h1>
                     <p class="typography-h3">Please come back later :)</p>
