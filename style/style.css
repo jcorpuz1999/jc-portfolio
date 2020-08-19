@@ -250,6 +250,16 @@ body{
     .typogrpahy-h1{
         font-size: 3.375rem;
     }
+    .main-about-body-container{
+        flex-direction: column;
+    }
+    .about-container, .about-h1-container{
+        width: 100%;
+    }
+    .about-container{
+        border-left: none;
+        padding: 0px;
+    }
 }
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
