@@ -1,0 +1,51 @@
+@font-face{
+   font-family: Work_Sans;
+   src: url("../../../assets/font-family/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Work_Sans;
+}
+
+.header{
+    background: #34465d;
+    padding: 5px;
+    
+}
+
+.header-text{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.44px;
+}
+
+.d3-main-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.d3-graph-container{
+    border: 0.5px solid ;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+#my_dataviz, #my_dataviz1, #my_dataviz2, #my_dataviz3, #my_dataviz4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 900px){
+    .d3-main-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -224,6 +224,47 @@ body{
   .openbtn:hover {
     background-color: #444;
   }
+
+  .projects-body-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+  }
+
+  .projects-card{
+    text-decoration: none;
+    height: 100%;
+    border: 0.5px solid #17252A;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 350px;
+    border-radius: 8px;
+    
+  }
+
+  .projects-card:nth-child(1){
+    background: url("../assets/images/bg-001.jpg") no-repeat center top;
+    background-size: cover;
+  }
+
+  .projects-card:nth-child(2){
+      background: url("../assets/images/bg-002.jpg") no-repeat center top;
+      background-size: cover;
+  }
+
+  .projects-card-title{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      background: #17252A;
+      color: #FFFFFF;
+      width: 100%;
+      margin: 0px;
+      border-radius: 0px 0px 8px 8px;
+      padding: 13px 0px;
+  }
+
   @media only screen and (min-width: 700px){
       #main{
           display: none;
@@ -239,6 +280,11 @@ body{
     #main {
         transition: margin-left .5s;
         padding: 16px;
+    }
+    .projects-body-container{
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        margin-top: 2rem;
     }
 
     .sub-container{
