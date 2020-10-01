@@ -69,13 +69,9 @@
                     <h1 class="typogrpahy-h1">Please, come back later.</h1>
                     <p class="typography-h3">Thanks :)</p> -->
                     <div class="projects-body-container">
-                        <a href="projects/project1/index.html" class="projects-card">
-                            <p class="projects-card-title">Admin Site</p>
-                        </a>
-
-                        <a href="projects/project2/index.html" class="projects-card">
-                            <p class="projects-card-title">Automobile Shop</p>
-                        </a>
+                       <div id="myBtn1">
+                           <h1>Hello</h1>
+                       </div>
                     </div>
 
                 </main>
@@ -83,13 +79,42 @@
         </div>
         
     </div>
-    <!-- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger
-      chat-icon="https://storage.googleapis.com/cloudprod-apiai/7e36fc40-f6e2-46b7-8d1e-4668acea9011_x.png"
-      intent="WELCOME"
-      chat-title="Jeremiah"
-      agent-id="4ee33b8c-acc1-4cb7-9a62-017e4880bd9d"
-      language-code="en"
-    ></df-messenger> -->
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      
+      </div>
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn1");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 </body>
 </html>
